@@ -165,7 +165,7 @@ def output(output_file, table):
 
 def main():
   print("TUGAS 1")
-  with open("input1", encoding="utf-8") as input_file:
+  with open("input", encoding="utf-8") as input_file:
     non_terminal = [x.replace("\n", "") for x in input_file.readline().split(',') if x != ""]
     terminal = [x.replace("\n", "") for x in input_file.readline().split(',') if x != ""]
     start_symbol = [x.replace("\n", "") for x in input_file.readline().split(',') if x != ""]
@@ -178,7 +178,7 @@ def main():
   print_first_follow_table(production_rule, non_terminal, terminal, start_symbol)
   print_LL_table(LL_1_table, terminal)
 
-  with open("output1", "w", encoding="utf-8") as output_file:
+  with open("output_table", "w", encoding="utf-8") as output_file:
     output(output_file, LL_1_table)
 
 if __name__=="__main__":

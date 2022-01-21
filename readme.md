@@ -1,10 +1,8 @@
-# Tugas Teknik Kompilasi
+# Python LL(1) Parsing Table Generator (Tugas 1)
+
 
 ## Input file format
-
-### Tugas 1
-
-`input1.txt`
+`input`
 ```
 NON TERMINAL SYMBOLS (divided by ,)
 TERMINAL SYMBOLS (divided by ,)
@@ -41,6 +39,3 @@ T=>FT'
 T'=>*FT'|Є
 F=>(E)|id
 ```
-
-### Tugas 2
-
