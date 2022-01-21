@@ -40,7 +40,6 @@ def parse(parsing_table, token, stack, output, non_terminal, terminal):
     if stack[-1] != token[0]:
       # # Python's Error Handler
       # raise Exception("Syntax Error")
-      # Custom Error Handler
       raise_custom_error()
       return
   # Rule 4
@@ -50,7 +49,6 @@ def parse(parsing_table, token, stack, output, non_terminal, terminal):
     if product.strip() == "ERROR":
       # # Python's Error Handler
       # raise Exception("Parsing error")
-      # Custom Error Handler
       raise_custom_error()
       return
     del stack[-1]
